@@ -1,0 +1,55 @@
+.facade_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+    }
+    main {
+        flex: 1;
+        overflow: scroll;
+        .img_box_top {
+            width: 100%;
+            height: auto;
+            .bufen {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+                img {
+                    display: inline-block;
+                    width: 32%;
+                    height: 80px;
+                    padding: 5px;
+                    border: 1px solid #ddd;
+                    margin-top: 5px;
+                }
+                .posi_frist {
+                    width: 32%;
+                    height: 80px;
+                    background: rgba(0, 0, 0, 0.2);
+                    position: absolute;
+                    left: 0.5%;
+                    top: 3%;
+                    p {
+                        text-align: center;
+                        margin: 15px auto;
+                        span {
+                            display: block;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+.details_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(233, 233, 233);
+    main {
+        flex: 1;
+        overflow: scroll;
+        .img_top {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .btn_pre {
+            width: 70px;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border: none;
+            font-size: 12px;
+            border-radius: 8px;
+            color: #fff;
+            position: absolute;
+            right: 4%;
+            bottom: 8%;
+            outline: none;
+        }
+        .deta_price {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #fff;
+            span {
+                display: block;
+                height: 23px;
+                text-align: center;
+                &:nth-of-type(1) {
+                    color: rgb(252, 163, 48);
+                    font-size: 18px;
+                }
+                &:nth-of-type(2) {
+                    color: #ccc;
+                }
+            }
+            button {
+                width: 150px;
+                height: 40px;
+                background: rgb(102, 175, 235);
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+            }
+        }
+        .deta_filter {
+            width: 100%;
+            height: 45px;
+            margin-top: 8px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            span {
+                font-size: 15px;
+                margin-left: 12px;
+            }
+            .active {
+                color: rgb(102, 175, 235);
+            }
+        }
+        .displace_box {
+            width: 100%;
+            height: 100%;
+            .eve_car {
+                width: 100%;
+                height: 155px;
+                margin-top: 2px;
+                background: #fff;
+                p {
+                    width: 100%;
+                    padding: 0 8px;
+                    &:nth-of-type(1) {
+                        height: 23px;
+                        line-height: 23px;
+                        background: rgb(233, 233, 233);
+                        font-size: 13px;
+                    }
+                    &:nth-of-type(2) {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 16px;
+                        margin-top: -10px;
+                    }
+                    &:nth-of-type(3) {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        margin-top: -20px;
+                        color: #ccc;
+                    }
+                    &:nth-of-type(4) {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        margin-top: -25px;
+                        text-align: right;
+                        span {
+                            &:nth-of-type(2) {
+                                margin-left: 5px;
+                                color: rgb(255, 178, 78);
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    background: #fff;
+                    border-top: 1px solid #ddd;
+                    color: rgb(102, 175, 235);
+                    font-size: 15px;
+                    outline: none;
+                }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: 50px;
+        background: rgb(102, 175, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        flex-direction: column;
+        span {
+            &:nth-of-type(2) {
+                font-size: 12px;
+            }
+        }
+    }
+}

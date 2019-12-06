@@ -1,0 +1,145 @@
+.floor_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        height: 27px;
+        background: rgb(94, 184, 5);
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    main {
+        flex: 1;
+        overflow: scroll;
+        .top_mess {
+            width: 100%;
+            height: 110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8px;
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:nth-of-type(1) {
+                    width: 30%;
+                    height: 110px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                &:nth-of-type(2) {
+                    width: 60%;
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span {
+                        &:nth-of-type(1) {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .pim {
+            width: 100%;
+            height: 240px;
+            p {
+                height: 35px;
+                padding: 0 10px;
+                &:nth-of-type(1) {
+                    height: 25px;
+                    line-height: 25px;
+                    background: rgb(233, 233, 233);
+                    color: rgb(156, 156, 156);
+                }
+                &:nth-of-type(2),
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 16px;
+                    input {
+                        outline: none;
+                        border: none;
+                        text-align: right;
+                    }
+                }
+            }
+            button {
+                width: 80%;
+                height: 38px;
+                background: rgb(102, 175, 235);
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .dress_city {
+            width: 100%;
+            height: auto;
+            p {
+                width: 100%;
+                height: 25px;
+                line-height: 25px;
+                background: rgb(233, 233, 233);
+                color: rgb(156, 156, 156);
+                padding: 0 10px;
+                font-size: 13px;
+            }
+            .zanNode {
+                text-align: center;
+                line-height: 50px;
+                background: none;
+            }
+        }
+        .eve_carAdress {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 0 8px;
+            div {
+                &:nth-of-type(1) {
+                    flex: 3;
+                }
+                &:nth-of-type(2) {
+                    p {
+                        &:nth-of-type(1) {
+                            color: rgb(241, 194, 38);
+                        }
+                    }
+                }
+                p {
+                    background: none;
+                    border: none;
+                    margin: 0;
+                    white-space: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 22px;
+                    height: 22px;
+                    &:nth-of-type(1) {
+                        font-size: 15px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
